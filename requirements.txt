@@ -1,0 +1,12 @@
+astrapy
+langchain-groq
+langchain-community
+langchain-core
+langgraph
+langchain-text-splitters
+langchain
+python-dotenv
+wikipedia
+tiktoken
+langchain-huggingface 
+sentence-transformers
