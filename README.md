@@ -58,8 +58,8 @@ flowchart LR
     TOOLS --> LLM
     TOOLS --> LLM
 
-    LC_LLM --> RESP
-    LG_LLM --> RESP
+    LLM --> RESP
+    LLM --> RESP
 
 ``` 
 ## Environment Setup
