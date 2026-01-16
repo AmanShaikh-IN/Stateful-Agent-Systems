@@ -41,8 +41,9 @@ flowchart LR
     U --> LC_AGENT
     U --> LG_AGENT
 
-    LG_AGENT <--> MEM
+    
     LC_AGENT --> LLM
+    LG_AGENT <--> MEM
     LG_AGENT --> LLM
     LLM --> TOOLS
     TOOLS --> LLM
