@@ -22,7 +22,7 @@ This implementation emphasizes **agent reasoning, state management, and system-l
 ---
 
 ## Architecture
-
+``` mermaid
 %%{init: {"flowchart": {"curve": "linear"}}}%%
 
 flowchart LR
@@ -49,7 +49,7 @@ flowchart LR
     LLM --> TOOLS
     TOOLS --> LLM
     LLM --> RESP
-
+```
 ## Environment Setup
 
 This project supports running in **Google Colab** or **locally**.
