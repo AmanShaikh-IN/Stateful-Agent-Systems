@@ -23,7 +23,8 @@ This implementation emphasizes **agent reasoning, state management, and system-l
 
 ## Architecture
 
-```mermaid
+%%{init: {"flowchart": {"curve": "linear"}}}%%
+
 flowchart LR
     U["User Query"]
     LC_AGENT["LangChain AgentExecutor"]
@@ -41,15 +42,14 @@ flowchart LR
     U --> LC_AGENT
     U --> LG_AGENT
 
-    
     LC_AGENT --> LLM
-    LG_AGENT <--> MEM
     LG_AGENT --> LLM
+    LG_AGENT <--> MEM
+
     LLM --> TOOLS
     TOOLS --> LLM
     LLM --> RESP
 
-``` 
 ## Environment Setup
 
 This project supports running in **Google Colab** or **locally**.
