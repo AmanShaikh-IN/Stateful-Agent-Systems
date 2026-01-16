@@ -79,10 +79,13 @@ The notebook automatically loads these values at execution time.
 
 When running locally, install requirements.txt and secrets should be provided via a `.env` file using `python-dotenv`.
 
-#### 1. Create a `.env` file
-
 ```env
 ASTRA_DB_APPLICATION_TOKEN=your_token_here
 ASTRA_DB_ID=your_database_id
 GROQ_API_KEY=your_groq_api_key
+```
+
+## License
+
+MIT License
 
