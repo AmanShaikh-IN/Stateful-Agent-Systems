@@ -32,7 +32,7 @@ flowchart LR
     end
 
     subgraph LG["LangGraph ReAct Agent"]
-        LG_AGENT["Graph Agent"]
+        LG_AGENT["GraphAgent"]
         MEM["Checkpointed Memory"]
     end
 
@@ -41,7 +41,7 @@ flowchart LR
         WK["Wikipedia"]
     end
 
-    LLM["llama-4-maverick-17b-128e-instruct"]
+    LLM["LLM"]
     RESP["Final Answer"]
 
     U --> LC_AGENT
@@ -53,12 +53,9 @@ flowchart LR
     LG_AGENT <--> MEM
 
     LLM --> TOOLS
-    LLM --> TOOLS
 
     TOOLS --> LLM
-    TOOLS --> LLM
 
-    LLM --> RESP
     LLM --> RESP
 
 ``` 
