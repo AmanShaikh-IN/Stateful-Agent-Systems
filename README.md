@@ -54,4 +54,39 @@ flowchart TD
     MEM --> LG
 
     LLM --> RESP
+## Environment Setup
+
+This project supports running in **Google Colab** or **locally**.
+
+---
+
+### Option 1: Google Colab
+
+The notebook was developed and tested in **Google Colab**.
+
+Before running, configure the following secrets using **Colab Secrets Manager**:
+
+- `ASTRA_DB_APPLICATION_TOKEN`
+- `ASTRA_DB_ID`
+- `GROQ_API_KEY`
+
+**Steps:**
+1. Open **Runtime → Secrets**
+2. Add each key with its corresponding value
+3. Restart the runtime
+
+The notebook automatically loads these values at execution time.
+
+---
+
+### Option 2: Local Setup
+
+When running locally, install requirements.txt and secrets should be provided via a `.env` file using `python-dotenv`.
+
+#### 1. Create a `.env` file
+
+```env
+ASTRA_DB_APPLICATION_TOKEN=your_token_here
+ASTRA_DB_ID=your_database_id
+GROQ_API_KEY=your_groq_api_key
 
